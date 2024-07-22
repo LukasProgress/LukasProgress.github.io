@@ -1,0 +1,38 @@
+/*
+Colors: #221e1f
+#f3f3f3
+#a2d9bb
+#51c083
+#00a74b */
+
+main {
+    background-color: #221e1f;
+}
+
+.navbar {
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar a {
+    background-color: #00a74b;
+    color: #221e1f;
+    float: left;
+    padding: 12px;
+}
+
+
+main {
+    color: #f3f3f3;
+}
+
+h2 {
+    color: #51c083;
+}
+
+
+
+
+
+
+
