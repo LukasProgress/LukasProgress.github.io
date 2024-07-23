@@ -5,33 +5,80 @@ Colors: #221e1f
 #51c083
 #00a74b */
 
-main {
+body {
     background-color: #221e1f;
+    font-family: 'Lucida Sans', Arial, sans-serif;
 }
 
+
 .navbar {
-    width: 100%;
-    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #00a74b;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 1%;
 }
 
 .navbar a {
-    background-color: #00a74b;
     color: #221e1f;
-    float: left;
     padding: 12px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Impact, sans-serif;
 }
 
-
+a {
+    color: #a2d9bb;
+    text-decoration: none;
+}
 main {
     color: #f3f3f3;
 }
 
 h2 {
     color: #51c083;
+    text-decoration: underline dotted;
+    margin-left: 10%;
 }
 
+p {
+    margin-left: 10%;
+    margin-right: 20%;
+    border-bottom: #00a74b dotted 5px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 30px;
+}
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+#sidebar {
+    margin-top:90px;
+    margin-left: 1%;
+    min-width: fit-content; /* Adjust the width as needed */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    background-color: #221e1f;
+}
+
+#sidebar a{
+    margin-top: 20px;
+}
+
+#content {
+    margin-left: 150px;
+}
 
 
 
