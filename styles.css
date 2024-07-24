@@ -26,6 +26,11 @@ body {
     font-size: 20px;
     text-decoration: none;
     font-family: Impact, sans-serif;
+    height: 100%;
+}
+
+.navbar a:hover {
+    background-color: #51c083;
 }
 
 a {
@@ -39,11 +44,11 @@ main {
 h2 {
     color: #51c083;
     text-decoration: underline dotted;
-    margin-left: 10%;
+    margin-left: 4%;
 }
 
 p {
-    margin-left: 10%;
+    margin-left: 4%;
     margin-right: 20%;
     border-bottom: #00a74b dotted 5px;
     padding-left: 15%;
@@ -60,7 +65,7 @@ footer {
 #sidebar {
     margin-top:90px;
     margin-left: 1%;
-    min-width: fit-content; /* Adjust the width as needed */
+    width: 20%; /* Adjust the width as needed */
     height: 100%;
     position: fixed;
     top: 0;
@@ -70,6 +75,10 @@ footer {
     align-items: baseline;
     justify-content: left;
     background-color: #221e1f;
+}
+
+#sidebar img {
+    max-width: 100%;
 }
 
 #sidebar a{
@@ -89,7 +98,7 @@ footer {
 }
 
 #content {
-    margin-left: 150px;
+    margin-left: 20%;
 }
 
 
