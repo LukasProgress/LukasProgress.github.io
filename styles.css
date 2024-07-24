@@ -73,7 +73,19 @@ footer {
 }
 
 #sidebar a{
+    color:#221e1f;
+    background-color: #00a74b;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    border: #a2d9bb 2px dotted;
+
     margin-top: 20px;
+}
+
+#sidebar a:hover {
+    border: #221e1f 2px dotted;
+    background-color: #a2d9bb;
 }
 
 #content {
