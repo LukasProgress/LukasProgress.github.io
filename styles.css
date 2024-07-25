@@ -104,4 +104,17 @@ p {
     justify-content: space-between;
 }
 
+.work span {
+    background-color: #00a74b;
+    color:#221e1f;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dotted #221e1f;
+}
+
+.work p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 
