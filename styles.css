@@ -71,11 +71,17 @@ p {
     background-color: #221e1f;
 }
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 #sidebar img {
     width: 100%;
 }
 
-#sidebar a{
+#sidebar a, #contact a{
     color:#221e1f;
     background-color: #00a74b;
     text-align: center;
@@ -84,6 +90,9 @@ p {
     border: #a2d9bb 2px dotted;
 
     margin-top: 20px;
+}
+#contact a {
+    width: 200px;
 }
 
 #sidebar a:hover {
@@ -117,4 +126,20 @@ p {
     padding-right: 10%;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 30%;
+}
+
+.projects a {
+    padding: 10px;
+    color: #221e1f;
+    background-color: #00a74b;
+    border: 2px dotted #221e1f;
+    border-radius: 10px;
+}
 
