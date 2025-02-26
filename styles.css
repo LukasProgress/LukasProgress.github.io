@@ -1,107 +1,104 @@
-/*
-Colors: #221e1f
-#f3f3f3
-#a2d9bb
-#51c083
-#00a74b */
-
-body {
-    background-color: #221e1f;
-    font-family: 'Lucida Sans', Arial, sans-serif;
+/* Colors */
+:root {
+    --primary-color: #00a74b;
+    --secondary-color: #51c083;
+    --text-color: #221e1f;
+    --background-color: #221e1f;
+    --highlight-color: #a2d9bb;
+    --light-color: #f3f3f3;
 }
 
+body {
+    background-color: var(--background-color);
+    color: var(--light-color);
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    background-color: #00a74b;
-    justify-content: left;
+    background-color: var(--primary-color);
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 1%;
+    padding: 10px;
 }
 
-.navbar a {
-    color: #221e1f;
+.nav-links a {
+    color: var(--text-color);
     padding: 12px;
     font-size: 20px;
     text-decoration: none;
     font-family: Impact, sans-serif;
-    height: 100%;
 }
 
-.navbar a:hover {
-    background-color: #51c083;
+.nav-links a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
 }
 
 a {
-    color: #a2d9bb;
+    color: var(--highlight-color);
     text-decoration: none;
 }
+
 main {
-    color: #f3f3f3;
-}
-
-h2 {
-    color: #51c083;
-    text-decoration: underline dotted;
-    margin-left: 4%;
-}
-
-p {
-    margin-left: 4%;
-    margin-right: 20%;
-    border-bottom: #00a74b dotted 5px;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #sidebar {
-    margin-top: 90px;
-    margin-left: 1%;
-    width: 20%; /* Adjust the width as needed */
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: left;
-    background-color: #221e1f;
-}
-
-#contact {
+    flex: 1 1 300px;
+    position: relative;
+    margin: 20px;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-#sidebar img {
-    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-#sidebar a, #contact a{
-    color:#221e1f;
-    background-color: #00a74b;
+#sidebar img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#sidebar a {
+    color: var(--text-color);
+    background-color: var(--primary-color);
     text-align: center;
     border-radius: 10px;
     width: 100%;
-    border: #a2d9bb 2px dotted;
-
+    border: var(--highlight-color) 2px dotted;
     margin-top: 20px;
-}
-#contact a {
-    width: 200px;
+    padding: 10px;
 }
 
 #sidebar a:hover {
-    border: #221e1f 2px dotted;
-    background-color: #a2d9bb;
+    border: var(--text-color) 2px dotted;
+    background-color: var(--highlight-color);
 }
 
 .content {
-    margin-left: 20%;
+    flex: 3 1 600px;
+    margin: 20px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    text-decoration: underline dotted;
+    margin-left: 4%;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0 20% 30px 4%;
+    border-bottom: 5px dotted var(--primary-color);
+    padding: 0 15% 30px 15%;
+    line-height: 1.6;
 }
 
 #footer {
@@ -113,33 +110,39 @@ p {
     justify-content: space-between;
 }
 
-.work span {
-    background-color: #00a74b;
-    color:#221e1f;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px dotted #221e1f;
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.work p {
-    padding-left: 10%;
-    padding-right: 10%;
+#footer a {
+    color: var(--text-color);
+    margin: 0 10px;
+    text-decoration: none;
 }
 
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-    margin-left: 10%;
-    margin-right: 30%;
+#footer a:hover {
+    text-decoration: underline;
 }
 
-.projects a {
-    padding: 10px;
-    color: #221e1f;
-    background-color: #00a74b;
-    border: 2px dotted #221e1f;
-    border-radius: 10px;
-}
+@media (max-width: 768px) {
+    #sidebar, .content {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
 
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        padding: 10px;
+        width: 100%;
+    }
+}
