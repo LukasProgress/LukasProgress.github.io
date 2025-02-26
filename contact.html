@@ -9,7 +9,7 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body>
+<body onload="showEmail()">
     <header>
         <nav class="navbar">
             <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
@@ -27,13 +27,13 @@
             <a href="https://github.com/LukasProgress" target="_blank">Github</a>
             <a href="https://github.com/LukasProgress/Lukas-Progress-Website" target="_blank">This Project</a>
             <a href="https://www.linkedin.com/in/lukas-progress/" target="_blank">LinkedIn</a>
-            <a href="mailto:probst404@gmail.com">Mail me</a>
+            <a id="email-link" href="showEmail()">Mail me</a>
         </div>
     </main>
     <footer class="content">
         <div id="footer">
             <a href="impressum.html">Impressum</a>
-            <a id="email-link" href="#">Mail</a>
+            <a id="email-link" href="showEmail()" >Mail</a>
         </div>
     </footer>
 </body>
