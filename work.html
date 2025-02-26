@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lukas Progress | Work</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function showEmail() {
+            var user = "probst404";
+            var domain = "gmail.com";
+            var email = user + "@" + domain;
+            document.getElementById("email-link").href = "mailto:" + email;
+        }
+    </script>
 </head>
 
 <body>
@@ -64,7 +72,7 @@
     <footer class="content">
         <div id="footer">
             <a href="impressum.html">Impressum</a>
-            <a href="mailto:probst404@gmail.com">Mail</a>
+            <a id="email-link" href="#">Mail</a>
         </div>
     </footer>
 </body>
