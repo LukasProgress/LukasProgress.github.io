@@ -146,3 +146,26 @@ p {
         width: 100%;
     }
 }
+
+.work p {
+    border-bottom: none;
+    
+}
+
+.job-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.job-desc {
+    font-style: italic;
+    margin-left: 15%;
+    padding-left: 10px;
+    border-left: 3px solid var(--primary-color);
+    padding-bottom: 5px;
+    
+}
+
