@@ -149,23 +149,28 @@ p {
 
 .work p {
     border-bottom: none;
-    
+} 
+
+.work {
+    margin-bottom: 20px; /* Abstand zwischen den Job-Einträgen */
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color); /* Trennlinie zwischen den Einträgen */
 }
 
+/* Stil für den Job-Titel */
 .job-title {
     font-weight: bold;
     color: var(--primary-color);
-    display: block;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
 }
 
+/* Stil für die Job-Beschreibung */
 .job-desc {
+    margin-top: 5px; 
+    margin-left: 10%; 
     font-style: italic;
-    margin-left: 15%;
-    padding-left: 10px;
-    border-left: 3px solid var(--primary-color);
-    padding-bottom: 5px;
-    
+    color: var(--light-color);
+    border-left: 3px solid var(--primary-color); 
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
