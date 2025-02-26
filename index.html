@@ -5,63 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lukas Probst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
-    <!--Colors: #221e1f
-                #f3f3f3
-                #a2d9bb
-                #51c083
-                #00a74b-->
+    <!--Colors: #221e1f, #f3f3f3, #a2d9bb, #51c083, #00a74b-->
 </head>
 
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
-
-            <a href="work.html">Work</a>
-
-            <a href="hobby.html">Hobby</a>
-
-            <a href="contact.html">Contact</a>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-[#221e1f] text-white py-4 shadow-md">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html"><img src="./images/logo.png" alt="logo" class="h-10"></a>
+            <div class="space-x-4">
+                <a href="work.html" class="text-[#a2d9bb] hover:text-[#51c083]">Work</a>
+                <a href="hobby.html" class="text-[#a2d9bb] hover:text-[#51c083]">Hobby</a>
+                <a href="contact.html" class="text-[#a2d9bb] hover:text-[#51c083]">Contact</a>
+            </div>
         </nav>
     </header>
-    <main>
-        <div id="sidebar">
-            <img src="./images/me.jpg" alt="A picture of me">
-            <a href="https://github.com/LukasProgress" target="_blank">Github</a>
-            <a href="https://github.com/LukasProgress/Lukas-Progress-Website" target="_blank">This Project</a>
-            <a href="https://www.linkedin.com/in/lukas-progress/" target="_blank">LinkedIn</a>
-            <a href="mailto:probst404@gmail.com">Mail me</a>
-        </div>
-        <div class="content">
-            <h2 id="about-me-h">
-                About me
-            </h2>
-            <p id="about-me">
-                I am a passionate IT educator, with a keen interest for DevOps
+    
+    <main class="container mx-auto mt-10 px-4 flex flex-col md:flex-row">
+        <aside id="sidebar" class="bg-white p-6 shadow-lg rounded-lg w-full md:w-1/3 text-center">
+            <img src="./images/me.jpg" alt="A picture of me" class="mx-auto rounded-full h-40 w-40 object-cover">
+            <div class="mt-4 space-y-2">
+                <a href="https://github.com/LukasProgress" target="_blank" class="block text-blue-600 hover:underline">Github</a>
+                <a href="https://github.com/LukasProgress/Lukas-Progress-Website" target="_blank" class="block text-blue-600 hover:underline">This Project</a>
+                <a href="https://www.linkedin.com/in/lukas-progress/" target="_blank" class="block text-blue-600 hover:underline">LinkedIn</a>
+                <a href="mailto:probst404@gmail.com" class="block text-blue-600 hover:underline">Mail me</a>
+            </div>
+        </aside>
+        
+        <section class="content bg-white p-6 shadow-lg rounded-lg w-full md:w-2/3 ml-0 md:ml-6">
+            <h2 id="about-me-h" class="text-2xl font-bold text-[#221e1f]">About me</h2>
+            <p id="about-me" class="mt-4 text-lg">
+                I am a passionate IT educator, with a keen interest in DevOps
                 and Cloud technologies. I currently live in Reutlingen, Germany and study computer science.
-                Maybe you would like to know more about my <a href="work.html">work</a>?
-                </br>
-                Apart from IT, I love cooking, video- and board-games, reading and I play theatre in a local student
-                theatre
-                group.
+                Maybe you would like to know more about my <a href="work.html" class="text-blue-600 hover:underline">work</a>?
             </p>
-            <h2 id="about-website-h">About this website</h2>
-            <p id="about-website">
+            <p class="mt-4 text-lg">
+                Apart from IT, I love cooking, video- and board-games, reading, and I play theatre in a local student
+                theatre group.
+            </p>
+            <h2 id="about-website-h" class="text-2xl font-bold text-[#221e1f] mt-6">About this website</h2>
+            <p id="about-website" class="mt-4 text-lg">
                 I created this website as part of my portfolio of private projects.
-                This is not meant to show off any great skills in the handling of HTML or dynamic websites, but rather
-                a place for me to share my interests, to self advertise and to provide a professional web appearance for
-                possible employees and head hunters, as well as friends, colleagues and family.
-                By you visiting this website it has already done its job: Reaching you.
+                This is not meant to show off any great skills in handling HTML or dynamic websites, but rather
+                a place for me to share my interests, to self-advertise, and to provide a professional web presence for
+                possible employers, headhunters, as well as friends, colleagues, and family.
+                By you visiting this website, it has already done its job: Reaching you.
             </p>
-        </div>
+        </section>
     </main>
-    <footer class="content">
-        <div  id="footer">
-            <a href="impressum.html">Impressum</a>
-            <a href="mailto:probst404@gmail.com">Mail</a>
+    
+    <footer class="bg-[#221e1f] text-white text-center py-4 mt-10">
+        <div id="footer" class="space-x-4">
+            <a href="impressum.html" class="underline">Impressum</a>
+            <a href="mailto:probst404@gmail.com" class="underline">Mail</a>
         </div>
     </footer>
 </body>
-
 </html>
