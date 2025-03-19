@@ -3,6 +3,20 @@ header {
     padding: 0;
     display: grid;
     grid-template-rows: auto auto;
+    background-color: #221e1f;
+}
+
+header div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-right: 9%;
+}
+
+header h2 {
+    margin: 0;
+    color: var(--primary-color);
+    text-align: center;
 }
 
 nav {
@@ -20,6 +34,6 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--highlight-color);
     border-radius: 5px;
 }

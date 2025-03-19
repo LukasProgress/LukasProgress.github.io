@@ -6,12 +6,14 @@
 .certificates {
     justify-content: space-between;
 }
+
 .certificates img {
     width: 75%;
 }
 
 .certificates img:hover {
     cursor: pointer;
+    filter: drop-shadow(0 0 6px var(--highlight-color));
 }
 
 .work {
