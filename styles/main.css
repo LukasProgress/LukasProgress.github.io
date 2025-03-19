@@ -6,15 +6,32 @@ main {
 
 main h2 {
     color: var(--secondary-color);
-    text-decoration: underline dotted;
     margin-left: 4%;
     font-size: 1.5em;
+}
+main a:hover {
+    background-color: var(--highlight-color);
+    border-radius: 4px;
+    color: var(--background-color);
 }
 
 main p {
     margin: 0 20% 30px 4%;
-    border-bottom: 5px dotted var(--primary-color);
+    border-bottom: 5px dotted var(--secondary-color);
     padding: 0 15% 30px 15%;
     line-height: 1.6;
 }
 
+::-webkit-scrollbar {
+    background-color: var(--background-color);
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 2px;
+}

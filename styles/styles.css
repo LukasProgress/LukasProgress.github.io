@@ -14,12 +14,12 @@
 }*/
 /* Colors */
 :root {
-    --primary-color: #B24C63;
+    --primary-color: #738678;
     --secondary-color: #00a74b;
-    --text-color: #123524;
-    --background-color: #123524;
-    --highlight-color: #FFBF46;
-    --light-color: #E4FDE1;
+    --text-color: #221e1f;
+    --background-color: #221e1f;
+    --highlight-color: #DC136C;
+    --light-color: #F7C1BB;
 }
 body {
     background-color: var(--background-color);
@@ -37,4 +37,9 @@ body {
 a {
     color: var(--highlight-color);
     text-decoration: none;
+}
+
+::selection {
+    color: var(--background-color);
+    background: var(--primary-color);
 }
