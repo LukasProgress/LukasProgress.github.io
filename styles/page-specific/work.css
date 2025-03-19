@@ -38,3 +38,18 @@
     padding: 5px;
     margin-bottom: 5px;
 }
+
+@media (max-width: 768px) {
+    .certificates {
+        justify-content: space-around;
+        overflow-x: auto;
+        overflow-y: none;
+    }
+    .certificates a {
+        display: none;
+    }
+
+    .certificates img{
+        width: 20%;
+    }
+}
