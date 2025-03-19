@@ -1,11 +1,13 @@
 
 /* Kontaktseite Styling */
 .contact-main {
+    grid-column: 1 / -1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 80vh;
     text-align: center;
+    height: 75vh;
+    overflow-y: hidden;
 }
 
 .contact-container {
