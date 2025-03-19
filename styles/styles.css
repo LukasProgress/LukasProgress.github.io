@@ -1,0 +1,48 @@
+@import url('navbar.css');
+@import url('sidebar.css');
+@import url('main.css');
+@import url('footer.css');
+
+/* Colors */
+:root {
+    --primary-color: #00a74b;
+    --secondary-color: #51c083;
+    --text-color: #221e1f;
+    --background-color: #221e1f;
+    --highlight-color: #a2d9bb;
+    --light-color: #f3f3f3;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--light-color);
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+
+h2 {
+    color: var(--secondary-color);
+    text-decoration: underline dotted;
+    margin-left: 4%;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0 20% 30px 4%;
+    border-bottom: 5px dotted var(--primary-color);
+    padding: 0 15% 30px 15%;
+    line-height: 1.6;
+}
+

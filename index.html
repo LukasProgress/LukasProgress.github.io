@@ -5,66 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lukas Probst</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body onload="showEmail()">
+
     <header>
+        <div>
+            <a id="logo" href="index.html"><img src="./images/logo.png" alt="logo"></a>
+        </div>
         <nav class="navbar">
-            <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
             <a href="work.html">Work</a>
             <a href="hobby.html">Hobby</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+    <aside>
+        <img src="./images/me.png" alt="A picture of me">
+        <a href="https://github.com/LukasProgress" target="_blank">Github</a>
+        <a href="https://github.com/LukasProgress/LukasProgress" target="_blank">This Website</a>
+        <a href="https://www.linkedin.com/in/lukas-progress/" target="_blank">LinkedIn</a>
+        <a href="#" onclick="this.href = showEmail();">Mail me</a>
+    </aside>
     <main>
-        <div id="sidebar">
-            <img src="./images/me.png" alt="A picture of me">
-            <a href="https://github.com/LukasProgress" target="_blank">Github</a>
-            <a href="https://github.com/LukasProgress/LukasProgress" target="_blank">This Website</a>
-            <a href="https://www.linkedin.com/in/lukas-progress/" target="_blank">LinkedIn</a>
-            <a href="#" onclick="this.href = showEmail();">Mail me</a>
-        </div>
-        <div class="content">
-            <h2 id="about-me-h">About me</h2>
-            <p id="about-me">
-                I am a passionate IT educator, with a keen interest for DevOps
-                and Cloud technologies. I currently live in Reutlingen, Germany and study computer science.
-                Maybe you would like to know more about my <a href="work.html">work</a>?
-                </br>
-                Apart from IT, I love cooking, video- and board-games, reading and I play theatre in a local student
-                theatre group.
-            </p>
-            <h2 id="about-website-h">About this website</h2>
-            <p id="about-website">
-                I created this website as part of my portfolio of private projects.
-                This is not meant to show off any great skills in the handling of HTML or dynamic websites, but rather
-                a place for me to share my interests, to self advertise and to provide a professional web appearance for
-                possible employees and head hunters, as well as friends, colleagues and family.
-                By you visiting this website it has already done its job: Reaching you.
-            </p>
-            <h2 id="work-h">Work</h2>
-            <p>
-                I have worked on multiple DevOps and cloud-related projects, specializing in automation,
-                infrastructure as code, and scalable architecture. Check out my <a href="work.html">portfolio</a> for more details.
-            </p>
-            <h2 id="hobby-h">Hobbies</h2>
-            <p>
-                Outside of work, I enjoy experimenting with new technologies, cooking, playing video and board games,
-                and participating in a local student theatre group. More on my hobbies <a href="hobby.html">here</a>.
-            </p>
-            <h2 id="contact-h">Contact</h2>
-            <p>
-                If you would like to get in touch, feel free to reach out via <a href="contact.html">my contact page</a>.
-            </p>
-        </div>
+        <h2 id="about-me-h">About me</h2>
+        <p id="about-me">
+            I am a passionate IT educator, with a keen interest for DevOps
+            and Cloud technologies. I currently live in Reutlingen, Germany and study computer science.
+            Maybe you would like to know more about my <a href="work.html">work</a>?
+            </br>
+            Apart from IT, I love cooking, video- and board-games, reading and I play theatre in a local student
+            theatre group.
+        </p>
+        <h2 id="about-website-h">About this website</h2>
+        <p id="about-website">
+            I created this website as part of my portfolio of private projects.
+            This is not meant to show off any great skills in the handling of HTML or dynamic websites, but rather
+            a place for me to share my interests, to self advertise and to provide a professional web appearance for
+            possible employees and head hunters, as well as friends, colleagues and family.
+            By you visiting this website it has already done its job: Reaching you.
+        </p>
+        <h2 id="work-h">Work</h2>
+        <p>
+            I have worked on multiple DevOps and cloud-related projects, specializing in automation,
+            infrastructure as code, and scalable architecture. Check out my <a href="work.html">portfolio</a> for
+            more details.
+        </p>
+        <h2 id="hobby-h">Hobbies</h2>
+        <p>
+            Outside of work, I enjoy experimenting with new technologies, cooking, playing video and board games,
+            and participating in a local student theatre group. More on my hobbies <a href="hobby.html">here</a>.
+        </p>
+        <h2 id="contact-h">Contact</h2>
+        <p>
+            If you would like to get in touch, feel free to reach out via <a href="contact.html">my contact
+                page</a>.
+        </p>
     </main>
-    <footer class="content">
-        <div id="footer">
+    <footer>
             <a href="impressum.html">Impressum</a>
             <a id="email-link" href="#" onclick="this.href = showEmail();">Mail</a>
-        </div>
     </footer>
 </body>
+
 </html>

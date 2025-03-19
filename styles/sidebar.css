@@ -1,0 +1,29 @@
+aside {
+    background-color: var(--background-color);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+aside a {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    border: var(--highlight-color) 2px dotted;
+    margin-top: 8%;
+    padding: 4%;
+}
+
+aside a:hover {
+    border: var(--text-color) 2px dotted;
+    background-color: var(--highlight-color);
+}

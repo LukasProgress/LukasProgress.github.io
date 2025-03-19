@@ -5,27 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lukas Progress | Work</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/page-specific/work.css">
     <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body onload="showEmail()">
     <header>
+        <div>
+            <a id="logo" href="index.html"><img src="./images/logo.png" alt="logo"></a>
+        </div>
         <nav class="navbar">
-            <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
-
             <a href="work.html">Work</a>
-
             <a href="hobby.html">Hobby</a>
-
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+    <aside id="sidebar" class="sidebar">
+        <img 
+            src="./images/cp.png" 
+            alt="AWS certified Cloud Practitioner" 
+            onclick='window.open("https:\/\/learn.microsoft.com/api/credentials/share/en-us/LukasProbst-5636/33C772D145BE7B1B?sharingId=F4B0A4EBD0611FF3", "_blank").focus()'>
+        <img src="./images/az900.png" alt="Azure AZ-900 Microsoft Azure Fundamentals">
+        <a href="https://www.linkedin.com/in/lukas-progress/" target="_blank" class="btn">LinkedIn</a>
+    </aside>
     <main class="container">
-        <aside id="sidebar" class="sidebar">
-            <img src="./images/cp.png" alt="AWS certified Cloud Practitioner" class="profile-img">
-            <a href="https://www.linkedin.com/in/lukas-progress/" target="_blank" class="btn">LinkedIn</a>
-        </aside>
         <section class="content">
             <h2>My Projects</h2>
             <div class="projects">
@@ -52,11 +56,11 @@
             </div>
             <div class="work">
                 <p><span class="job-title">Tutor "Informatik I"</span> - <a href="https://db.cs.uni-tuebingen.de/teaching/ws2223/informatik1/">University of Tübingen</a> (10/19 – 02/23)</p>
-                <p class="job-desc">Conducted tutorials, graded assignments, and supported students in fundamental computer science concepts.</p>
+                <p class="job-desc">Conducted tutorials, graded assignments, and supported students in functional programming fundamentals in Racket/Scheme.</p>
             </div>
             <div class="work">
                 <p><span class="job-title">Tutor "Informatik II"</span> - <a href="https://uni-tuebingen.de/.../informatik-ii-4v-4ue-inf1120/">University of Tübingen</a> (04/20 – 07/22)</p>
-                <p class="job-desc">Guided students in advanced topics including data structures and algorithms.</p>
+                <p class="job-desc">Guided students in learning the fundamentals of OOP in C and Java.</p>
             </div>
             <div class="work">
                 <p><span class="job-title">Student Assistant</span> - <a href="https://uni-tuebingen.de/.../deepstereovision/">University of Tübingen</a> (07/21 – 09/21)</p>
@@ -64,7 +68,7 @@
             </div>
             <div class="work">
                 <p><span class="job-title">Private Tutor</span> - <a href="https://techstarter.de">ABACUS Nachhilfe Institut</a> (10/19 – 02/22)</p>
-                <p class="job-desc">Provided one-on-one tutoring in mathematics and computer science for high school and university students.</p>
+                <p class="job-desc">Provided one-on-one tutoring in mathematics, computer science, biology and english for school students.</p>
             </div>
         </section>
     </main>
