@@ -7,7 +7,9 @@ fi
 BUCKETNAME=$1
 
 aws s3 sync . s3://$BUCKETNAME/ \
---exclude ".vscode/*" \
+--exclude ".git/* \
+--exclude ".github/*" \
 --exclude ".gitignore" \
+--exclude ".vscode/*" \
 --exclude "README.md" \
---exclude "syncWithAWS.sh"
+--exclude "syncWithAWS.sh"  
