@@ -1,7 +1,7 @@
 /* Grid Layout*/
 @media (max-width: 768px) {
     body {
-        height: 100svh;  
+        height: 100%;  
         grid-template-rows: auto auto 1fr auto auto;
     }
 
