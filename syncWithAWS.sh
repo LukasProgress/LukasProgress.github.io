@@ -7,6 +7,7 @@ fi
 BUCKETNAME=$1
 
 aws s3 sync . s3://$BUCKETNAME/ \
+--size-only
 --exclude ".git/*" \
 --exclude ".github/*" \
 --exclude ".gitignore" \
