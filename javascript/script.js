@@ -7,31 +7,37 @@ function showEmail() {
 
 async function loadVisitors() {
     const apiUrl = "https://im1ybb28c0.execute-api.eu-central-1.amazonaws.com/visits";
-    const alreadyVisited = sessionStorage.getItem("visited");
-    const method = alreadyVisited ? "GET" : "POST";
-    try {
-      const response = await fetch(apiUrl, {
-        method,
-      });
-  
-      if (!response.ok) {
-        throw new Error(`API returned status ${response.status}`);
-      }
-      const data = await response.json();
-  
-      // Update UI
-      document.getElementById("total").textContent = `${data.total}👤`;
-      document.getElementById("weekly").textContent = `(${data.weekly}👤 this week)`;
+    const cooldownMinutes = 30;
 
-  
-      // Store session flag
-      if (!alreadyVisited) {
-        sessionStorage.setItem("visited", "true");
-      }
-  
-    } catch (err) {
-      console.error("Visitor API call failed:", err);
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = new Date().getTime();
+    let method = "GET";
+
+    if (!lastVisit || now - parseInt(lastVisit, 10) > cooldownMinutes * 60 * 1000) {
+      method = "POST";
     }
-  }
+
+    try {
+      const response = await fetch(apiUrl, { method });
+
+      if (!response.ok) {
+        throw new Error(`API returned ${response.status}`);
+      }
+
+      const data = await response.json();
+        // Update UI
+        document.getElementById("total").textContent = `${data.total}👤`;
+        document.getElementById("weekly").textContent = `(${data.weekly}👤 this week)`;
+
+    
+        // Store session flag
+        if (method === "POST") {
+          localStorage.setItem("lastVisit", now.toString());
+        }
+    
+      } catch (err) {
+        console.error("Visitor API call failed:", err);
+      }
+    }
   
 window.addEventListener('DOMContentLoaded', loadVisitors);
