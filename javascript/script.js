@@ -34,3 +34,4 @@ async function loadVisitors() {
     }
   }
   
+window.addEventListener('DOMContentLoaded', loadVisitors);
