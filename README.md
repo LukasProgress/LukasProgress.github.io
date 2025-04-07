@@ -1,31 +1,16 @@
 # Lukas Progress
 
-Hi, this is my personal website. It is hosted as a static website on an AWS s3 bucket and reachable under (TODO insert URL).
+Hi, this is my personal website. It is hosted as a static website on an AWS s3 bucket and reachable under http://lukas-probst.com
 
-You can find a repo for the backend on (TODO Insert repo backend).
+You can find a repo for the backend [here](https://github.com/LukasProgress/website-backend).
 
-To deploy this yourself: 
+## Deployment
 
-## Verify AWS installation
+This is the frontend of my website. It is hosted via an AWS S3 Bucket, served via Cloudfront. 
+A Domain was bought via Route 53 and integrated. 
+While the frontend was deployed using the AWS Management Console, the Backend consists solely of python functions to be deployed to lambda and terraform code.
 
-```sh
-aws --version
-```
+## CI/CD
 
-## Configure access
+A CI/CD Pipeline is in place to update the hosted content automatically within seconds. You can find the pipeline file under `.github/workflows/deploy-to-s3.yml`
 
-```sh
-aws configure
-```
-
-## Create Bucket
-```sh
-aws s3 mb s3://<bucketname>
-```
-
-## Run sync script
-
-```sh
-chmod u+x syncWithAWS.sh
-./syncWithAWS.sh
-```
