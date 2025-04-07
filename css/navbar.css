@@ -6,11 +6,19 @@ header {
     background-color: #221e1f;
 }
 
-header div {
+.headerdiv {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     margin-right: 9%;
+}
+
+.headerdiv p {
+    font-size: x-small;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    color: var(--light-color)
 }
 
 header h2 {
